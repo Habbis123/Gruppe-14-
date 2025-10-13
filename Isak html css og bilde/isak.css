@@ -1,0 +1,113 @@
+/* profil.css */
+
+/* Innholdsboksen i midten */
+.Innhold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Tekststiler */
+.profil-container h1 {
+  margin-bottom: 10px;
+}
+
+.profil-container h3 {
+  margin-top: 0;
+  color: #555;
+  font-weight: normal;
+}
+
+
+
+/* For instagram og github knappene */
+.sosiale-lenker {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.knapp {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+
+.sosiale-ikoner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.sosialemedier-knapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* GitHub-knapp med hover */
+.github {
+  background-color: #24292e;
+}
+.github:hover {
+  background-color: #3c4044;
+}
+
+/* Instagram-knapp med hover */
+.instagram {
+    background-color: #cc2366;
+}
+.instagram:hover {
+  background-color: #bc1888;
+}
+
+/* Tilbake til oss knapp */
+.tilbake-knapp {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #004b8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+ 
+}
+
+.tilbake-knapp:hover {
+  background-color: #0074d9;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("Bilder/olen.jpg") center/cover no-repeat !important; /* overstyrer bakgrunnsbildet i OmOss.css */
+  background-attachment: fixed; /* gjør at bildet ikke scroller */
+}
+
+/* Gjør teksten lettere å lese over bildet med en hvit boks */
+.profil-container {
+  background: rgba(255, 255, 255);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
