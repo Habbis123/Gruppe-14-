@@ -1,0 +1,290 @@
+
+
+/* ===== Hjem.html ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* ===== Header felles ===== */
+.header, header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #292929;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  z-index: 1000;
+}
+
+.inner_header {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner_header h1 {
+  color: #fff;
+  max-width: 300px;
+  margin-right: 20%;
+}
+
+.logo_container img {
+  height: 70px;
+}
+
+.navigation {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navigation li a:hover {
+  background: #2e1eb9;
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("Bilder/BergenBakgrunn.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.banner_text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.banner_text h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.banner_text p {
+  font-size: 1.5em;
+}
+
+/* ===== innhold hjem.html ===== */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+aside, article {
+  border-left: 4px solid #006699;
+  font-weight: bold;
+  flex: 1 1 50%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.986);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.315);
+  border-radius: 10px;
+}
+
+aside:hover, article:hover{
+  background-color: rgba(87, 85, 85, 0.103);
+}
+
+.infotekst .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0px 30px;
+  padding: 0 20px;
+}
+
+.infotekst aside, .infotekst article {
+  font-weight: bold;
+  list-style: none;
+  margin-right: 0%;
+  padding: 80px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.315);
+  border-radius: 10px;
+}
+
+
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+main h3 {
+  color: #006699;
+  margin-bottom: 10px;
+}
+
+.tekstvisning {
+  background: #eef6fa;
+  border-left: 4px solid #006699;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.tekstunder p{
+  font-style: italic;
+  color: #000;
+  text-align: center;
+}
+
+.tekstunder img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== OmOss.html ===== */
+
+.personkort-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.person1, .person2, .person3, .person4 {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 40px 100px 30px 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  width: 250px;
+}
+.person1 img, .person2 img, .person3 img, .person4 img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.person1 h2, .person2 h2, .person3 h2, .person4 h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #111;
+}
+.person1 p, .person2 p, .person3 p, .person4 p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* ===== Bilde OmOss ===== */
+body.omos {
+  background-image: linear-gradient(rgba(8, 8, 8, 0.856), rgba(223, 223, 223, 0.219)), url('Bilder/OmOss.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== Vedlikehold.html ===== */
+.venstre {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.hoyre {
+  flex: 2;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main table {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background-color: #3584c4;
+  color: white;
+}
+
+.left-boxes { display:flex; flex-direction:column; gap:40px; }
+
+
+
+
+
+
+/* ===== Klar.html ===== */
+
+.tekstvisning { background-color: #f8f8f8; padding: 15px; border: 1px solid #ddd; border-radius: 5px; white-space: pre-line; }
+
+
+/* ===== Info.html ===== */
+.content { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; }
+article { margin-left: 100px; }
+
+.content { flex-direction: column; align-items: center; padding: 40px 0px; }
+
+
+
+
+/*Felles Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
