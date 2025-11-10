@@ -1,0 +1,96 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regnbyen AS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="nedbor-bg">
+
+  <header class="header">
+    <div class="inner_header">
+      <div class="logo_container">
+        <a href="Hjem.html"><img src="Bilder/logo.png" alt="Logo"></a>
+      </div>
+      <h1>Regnbyen AS</h1>
+      <nav>
+        <ul class="navigation">
+          <li><a href="Hjem.html">Hjem</a></li>
+          <li><a href="Info.html">Info</a></li>
+          <li><a href="Klar.html">Klær</a></li>
+          <li><a href="Vedlikehold.html">Vedlikehold</a></li>
+          <li><a href="Biler.html">Biler </a></li>
+          <li><a href="OmOss.html">Om Oss</a></li>
+          <li><a href="Nedbør.html">Nedbør</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="Innhold">
+    <div class="tittelboks">
+      <h1 style="color: black;">Bruksanvisning for Bergen-nedbørsgraf</h1>
+    </div>
+
+    <section class="innhold-tekst">
+      <h2>Om programmet</h2>
+      <p>
+        Dette programmet visualiserer nedbør i Bergen basert på en prediksjonsmodell. Grafene viser månedlig eller kvartalsvis nedbør og beregner årsnedbør.
+      </p>
+
+      <h2>Hvordan bruke programmet</h2>
+
+      <h3>Start programmet</h3>
+      <p>
+        Kjør skriptet. Et vindu med to paneler åpnes:
+      </p>
+      <ul>
+        <li>Venstre panel: Graf over nedbør (månedlig eller kvartalsvis)</li>
+        <li>Høyre panel: Kart over Bergen</li>
+      </ul>
+
+      <h3>Velg visningstype</h3>
+      <p>Bruk knappene til venstre:</p>
+      <ul>
+        <li>Måned: Viser nedbør per måned</li>
+        <li>Kvartal: Viser nedbør per kvartal</li>
+      </ul>
+
+      <h3>Velg punkt på kartet</h3>
+      <p>Klikk på ønsket sted på kartet</p>
+      <ul>
+        <li>Et rødt punkt markeres</li>
+        <li>Grafen oppdateres automatisk med predikert nedbør for valgt punkt</li>
+      </ul>
+
+      <h3>Grafen viser</h3>
+      <ul>
+        <li>Stolpediagram: Nedbør i mm per måned/kvartal</li>
+        <li>Trend-linje: Predikert utvikling</li>
+        <li>Rød linje: Gjennomsnittlig nedbør</li>
+        <li>Tittel: Årsnedbør i mm for valgt punkt</li>
+      </ul>
+
+      <h3>Konsollutskrift</h3>
+      <p>Etter hver oppdatering vises:</p>
+      <ul>
+        <li>Standardavvik for predikert nedbør</li>
+        <li>R²-verdi for modellen</li>
+      </ul>
+    </section>
+
+    <section class="bilder-seksjon">
+      <div class="bilde-container">
+        <img src="Bilder/Nedbor1.png" alt="Nedbørsgraf eksempel 1">
+      </div>
+      <div class="bilde-container">
+        <img src="Bilder/Nedbor2.png" alt="Nedbørsgraf eksempel 2">
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Regnbyen AS. Alle rettigheter reservert.</p>
+  </footer>
+
+</body>
+</html>
